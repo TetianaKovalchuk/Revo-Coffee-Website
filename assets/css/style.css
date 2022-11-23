@@ -358,8 +358,7 @@ header::after {
 .section2 {
   min-height: calc(1000 * var(--desktopProportions));
   max-width: 100%;
-  overflow: hidden;
-  position: relative;
+position: relative;
   padding-top: calc(150 * var(--desktopProportions));
   animation: normal slideFromLeft 1s ease;
 }
@@ -369,6 +368,12 @@ header::after {
 
 .section2-slider {
   margin-top: calc(80 * var(--desktopProportions));
+}
+
+.section2-slider .wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
 }
 
 .section2-slider-gradient {
@@ -422,7 +427,9 @@ header::after {
   background-color: var(--accentColor1);
   z-index: 99;
   position: absolute;
-  top: 50%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   padding: calc(15 * var(--desktopProportions))
     calc(15 * var(--desktopProportions));
   border-radius: 50%;
@@ -433,6 +440,9 @@ header::after {
 }
 
 /* стрелки исправить, может обернуть канвас в враппер и перед канвасом поставить стрелки? а врапперу сделать ширину 100% и оверфлоу хидден, помню еще гдето ставила оверфлоу хидден надо чекнуть */
+
+.section2-slider-arrows {
+}
 
 .section2-slider-arrows-left {
   left: calc(80 * var(--desktopProportions));
@@ -454,6 +464,7 @@ header::after {
   flex-wrap: wrap;
   margin: calc(-25 * var(--desktopProportions));
   margin-left: calc(150 * var(--desktopProportions));
+  position: relative;
 }
 
 .section2-slider-canvas-list-item {
