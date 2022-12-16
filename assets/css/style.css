@@ -358,7 +358,7 @@ header::after {
 .section2 {
   min-height: calc(1000 * var(--desktopProportions));
   max-width: 100%;
-position: relative;
+  position: relative;
   padding-top: calc(150 * var(--desktopProportions));
   animation: normal slideFromLeft 1s ease;
 }
@@ -378,9 +378,8 @@ position: relative;
 
 .section2-slider-gradient {
   left: 0;
-  top: -50%;
   bottom: 50%;
-  height: 200%;
+  height: 100%;
 }
 
 .section2-slider-gradient {
